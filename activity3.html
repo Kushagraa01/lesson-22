@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity 3</title>
+</head>
+<body>
+    <h2>Arguments</h2>
+    <h4>Find the greater</h4>
+    <p id="p1"></p>
+    <script>
+        function Findmax(){
+            var i;
+            var max=0;
+        for(i=0;i<arguments.length;i++){
+              if(arguments[i]>max){
+                max=arguments[i]
+              }
+            }
+        return max;
+        }
+        document.getElementById("p1").innerHTML=Findmax(30, 24, 63, 56);
+    </script>
+</body>
+</html>
